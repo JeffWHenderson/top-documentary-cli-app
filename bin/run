@@ -2,4 +2,4 @@
 
 require_relative "../config/environment"
 
-Controller.new
+Controller.new.menu
