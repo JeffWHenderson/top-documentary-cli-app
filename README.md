@@ -1,2 +1,1 @@
-# top-documentary-cli-app
-a cli app that scrapes information from https://topdocumentaryfilms.com/
+gives info from terminal on available methods in ruby using ruby-doc.org
