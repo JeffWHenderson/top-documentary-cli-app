@@ -2,7 +2,7 @@
 
 require_relative "../config/environment"
 
-Controller.new.menu
+Controller.new.call
 
 
 #remember to add executable permission
