@@ -3,3 +3,6 @@
 require_relative "../config/environment"
 
 Controller.new.menu
+
+
+#remember to add executable permission
