@@ -13,18 +13,12 @@ class Controller
     puts "category : #{Scraper.categories[input - 1][0]}\n\n"
     Scraper.new.scrape_category_url(Scraper.categories[input - 1][1])
 
-    puts "\n\n type categories for all categories. type number of documentary for more info"
+    puts "\n\n enter movie number if you want a link.  'exit' to leave.  or you can enter 'list' for categories"
     input = gets.strip.to_i
-    puts "MOVIE STORYLINE:"
-    #Scraper.new.scrape_category_url(Scraper.categories[input - 1][1])
-
-    puts "type anything to return to main page.  type exit to quit"
-    input = gets.strip
-    puts "you chose #{input}"
+    #show movie objects url
+    #or go to list
+    #or exit
+    #this loop will end my program
   end
 
-  # 1. scrape from https://topdocumentaryfilms.com/
-  # 2. present a #menu
-  # 3. gets user input
-  # 4. shows #detail
 end
