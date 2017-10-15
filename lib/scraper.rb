@@ -1,5 +1,3 @@
-require "nokogiri"
-require "open-uri"
 
 class Scraper
 attr_accessor
@@ -39,5 +37,5 @@ attr_accessor
     @@current_movies
   end
 
-  #I probably need to add #reset! for movie array.. if user reloads categories multiple times
+  #I didn't need a reset #reset! for movie array.. if user reloads categories multiple times
 end
