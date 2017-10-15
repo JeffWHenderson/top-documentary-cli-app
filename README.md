@@ -2,7 +2,7 @@
 # top-documentary-cli-app
 This Command line interface app is intended to make looking up documentaries easy. Open ./bin/run to get started.  you'll be given options to explore different documentaries by category. simply input the number that corresponds with the category you are interested in and you'll be given a list of documentaries.  you can click on the links to open a page with the video in your browser.
 
-#install instructions
+## install instructions
 You can install this gem via gem install top-documentary-cli-app. The CLI will be installed and you can run top-documentary (from the bin directory) to get a list of documentaries right in your command line.
 
 ## Contributing
