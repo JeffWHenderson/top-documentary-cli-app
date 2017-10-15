@@ -3,6 +3,3 @@
 require_relative "../config/environment"
 
 Controller.new.call
-
-
-#remember to add executable permission
