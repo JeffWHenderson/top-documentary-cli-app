@@ -10,7 +10,7 @@ attr_accessor
     @@current_movies
   end
 
-  def scrape_home_page(url = "https://topdocumentaryfilms.com/")
+  def self.scrape_home_page(url = "https://topdocumentaryfilms.com/")
     doc = Nokogiri::HTML(open(url))
     category = doc.search("ul.cat-list a")
     category.each_with_index do |x, i|
@@ -19,7 +19,7 @@ attr_accessor
     end
   end
 
-  def scrape_category_url(category_url = "https://topdocumentaryfilms.com/category/biography/")
+  def self.scrape_category_url(category_url = "https://topdocumentaryfilms.com/category/biography/")
     doc = Nokogiri::HTML(open(category_url))
       details = doc.css("article.module")
       Documentaries.reset!
@@ -31,5 +31,4 @@ attr_accessor
         Documentaries.new(rating, year_made, title, movie_url)
       end
   end
-
 end
