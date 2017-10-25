@@ -1,0 +1,36 @@
+=> [[32m#<Documentaries:0x0000000229e3f0[0m
+  @movie_url[32m=[0m
+   [1;34m#(Attr:0x114f220 {[0m
+     name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m,
+     value = [31m[1;31m"[0m[31mhttps://topdocumentaryfilms.com/911-trillions-follow-money/[1;31m"[0m[31m[0m
+     }),
+  @rating[32m=[0m[31m[1;31m"[0m[31m[1;35m\u[0m[31m2605 8.75[1;31m"[0m[31m[0m,
+  @title[32m=[0m[31m[1;31m"[0m[31m9/11 Trillions: Follow The Money[1;31m"[0m[31m[0m,
+  @year_made[32m=[0m[31m[1;31m"[0m[31m2015 [1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Documentaries:0x000000022ed6d0[0m
+  @movie_url[32m=[0m
+   [1;34m#(Attr:0x1176b90 {[0m
+     name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m,
+     value = [31m[1;31m"[0m[31mhttps://topdocumentaryfilms.com/911-decade-deception/[1;31m"[0m[31m[0m
+     }),
+  @rating[32m=[0m[31m[1;31m"[0m[31m[1;35m\u[0m[31m2605 8.57[1;31m"[0m[31m[0m,
+  @title[32m=[0m[31m[1;31m"[0m[31m9/11: Decade of Deception[1;31m"[0m[31m[0m,
+  @year_made[32m=[0m[31m[1;31m"[0m[31m2015 [1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Documentaries:0x0000000233cca8[0m
+  @movie_url[32m=[0m
+   [1;34m#(Attr:0x119e67c {[0m
+     name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m,
+     value = [31m[1;31m"[0m[31mhttps://topdocumentaryfilms.com/911-belligerent-empire/[1;31m"[0m[31m[0m
+     }),
+  @rating[32m=[0m[31m[1;31m"[0m[31m[1;35m\u[0m[31m2605 8.75[1;31m"[0m[31m[0m,
+  @title[32m=[0m[31m[1;31m"[0m[31m9/11 and the Belligerent Empire[1;31m"[0m[31m[0m,
+  @year_made[32m=[0m[31m[1;31m"[0m[31m2015 [1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<Documentaries:0x000000024171f0[0m
+  @movie_url[32m=[0m
+   [1;34m#(Attr:0x120b90c {[0m
+     name = [31m[1;31m"[0m[31mhref[1;31m"[0m[31m[0m,
+     value = [31m[1;31m"[0m[31mhttps://topdocumentaryfilms.com/911-exposed/[1;31m"[0m[31m[0m
+     }),
+  @rating[32m=[0m[31m[1;31m"[0m[31m[1;35m\u[0m[31m2605 8.12[1;31m"[0m[31m[0m,
+  @title[32m=[0m[31m[1;31m"[0m[31m9/11 Exposed[1;31m"[0m[31m[0m,
+  @year_made[32m=[0m[31m[1;31m"[0m[31m2015 [1;31m"[0m[31m[0m[32m>[0m]

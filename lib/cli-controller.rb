@@ -1,6 +1,9 @@
+require 'pry'
+
 class Controller
   def call
-    Scraper.new
+    #Scraper.new
+    Scraper.scrape_home_page
     list_categories
     menu
   end
@@ -9,13 +12,13 @@ class Controller
     input = nil
     while input != "exit"
       input = gets.strip
-
-      if input.to_i > 0 && input.to_i <= Scraper.categories.size
-        puts "\t\t\t\n#{Scraper.categories[input.to_i - 1][0]}\n\n"
-        make_selection(input.to_i)
-        show_list
+      if input.to_i > 0 && input.to_i <= Category.all.size
+        category = Category.all[input.to_i - 1]
+        puts "\t\t\t\n#{category.name}\n\n"
+        make_selection(category)
+        show_list(category)
       elsif input == "list"
-        call
+        list_categories
       elsif input == "exit"
         goodbye
         input = exit
@@ -26,20 +29,20 @@ class Controller
   end #end of menu function
 
   def list_categories
-    Scraper.scrape_home_page
+    Category.all.each.with_index(1) {|x, i| puts "#{i}. #{x.name}"}  #Scraper.categories.each.with_index(1) {|category, i| puts "#{i}. #{category[0]}"}
     puts "select the number of the category you would like to browse or type 'exit'"
   end
 
-  def make_selection(input)
-    Scraper.scrape_category_url(Scraper.categories[input - 1][1])
+  def make_selection(category)
+    Scraper.scrape_category_url(category) #////// unless category exists ///////
   end
 
   def goodbye
     puts "\n\n\nThank you for your visit. come back soon!"
   end
 
-  def show_list
-    Documentaries.all.each_with_index do |documentary, index|
+  def show_list(category)
+    category.movies.each_with_index do |documentary, index|
       puts "#{index + 1}.#{documentary.title}\n\t Rating: #{documentary.rating}\t Year made:#{documentary.year_made} \t\t\t #{documentary.movie_url}"
     end
     puts  "\n\nPlease enter 'list' for all categories, 'exit', a valid number from the category list, or click on link to watch!"
